@@ -1,7 +1,6 @@
 import React, { PureComponent } from "react";
 import "./style";
 import "./spacing";
-import logo from './assets/Attendance.gif'
 
 class LoginForm extends PureComponent {
   constructor() {
@@ -56,7 +55,7 @@ class LoginForm extends PureComponent {
     let chkPwd = this.state.passwordValid;
     let formValid = this.state.formValid;
     return (
-      <div className="body-login-bg pb-14 pt-13 form-center ">
+      <div className="body-login-bg pb-14 pt-14 form-center ">
       <div className="container-bg pe-5 ps-5">
         <form
           autoComplete="off"
@@ -68,10 +67,9 @@ class LoginForm extends PureComponent {
             <span className="form-error">email Or Password not matched</span>
           )}
 
-<img src={logo} alt="loading..." />
 
           <div className={`form-group ${this.errorClass(chkEmail)}`}>
-            <label htmlFor="email" className="mt-13"> Email: </label>
+            <label htmlFor="email" className="mt-8 pb-1"> Email: </label>
             <input
               type="email"
               ref="email"
@@ -88,7 +86,7 @@ class LoginForm extends PureComponent {
           </div>
 
           <div className={`form-group ${this.errorClass(chkPwd)}`}>
-            <label htmlFor="password">Password: </label>
+            <label htmlFor="password" className="mt-4 pb-1">Password: </label>
             <input
               type="password"
               ref="password"
@@ -103,7 +101,7 @@ class LoginForm extends PureComponent {
               </span>
             )}
           </div>
-          <div className="form-group mb-13 mt-10">
+          <div className="form-group mb-6 mt-5 form-center">
             <input
               type="Submit"
               value="Login"

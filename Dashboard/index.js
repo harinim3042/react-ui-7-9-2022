@@ -11,7 +11,7 @@ const Welcome = ({
   let username = user.email && user.email.split('@')[0];
 
   return (
-    <div className="container">
+    <div className="container  ">
       <div className="row">
         <div className="col-12">
           <p className="user-title">

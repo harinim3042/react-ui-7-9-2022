@@ -1,6 +1,6 @@
 import { loginUser, productList, removeProduct, addProduct, signOut } from "../actions";
 
-let user = [{ email: "Clarion@clarion.com", password: "Clarion123" }];
+let user = [{ email: "harini@123.com", password: "harini123" }];
 
 let products = [
   {

@@ -1096,6 +1096,10 @@
 .pt-13 {
   padding-top: 7.5rem !important;
 }
+.pt-14 {
+  padding-top: 14.5rem !important;
+}
+
 
 .pe-0 {
   padding-right: 0 !important;
@@ -1209,7 +1213,7 @@
   padding-bottom: 7.5rem !important;
 }
 .pb-14 {
-  padding-bottom: 10.125rem !important;
+  padding-bottom: 12.125rem !important;
 }
 
 .ps-0 {

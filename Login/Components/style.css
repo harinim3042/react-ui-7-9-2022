@@ -22,12 +22,10 @@
 background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  
 background: linear-gradient(to right, #E2E2E2, #C9D6FF); 
 border: #C9D6FF 2px;
-/* border-radius: 120px; */
+border-radius: 5%;
 box-shadow: 3px;
 text-align: left;
-/* width: 25%;
-padding: 3%;
-margin-top: 20px; */
+
 display: flex;
 }
 
