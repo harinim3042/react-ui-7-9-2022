@@ -1,7 +1,7 @@
 import React, { PureComponent } from "react";
 import "./style";
 import "./spacing";
-import logo from './attendance.gif'
+import logo from './assets/Attendance.gif'
 
 class LoginForm extends PureComponent {
   constructor() {
