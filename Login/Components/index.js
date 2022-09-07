@@ -55,7 +55,7 @@ class LoginForm extends PureComponent {
     let chkPwd = this.state.passwordValid;
     let formValid = this.state.formValid;
     return (
-      <div className="body-login-bg pb-14 pt-14 form-center ">
+      <div className="body-login-bg pb-13 pt-12 form-center ">
       <div className="container-bg pe-5 ps-5">
         <form
           autoComplete="off"
@@ -67,8 +67,10 @@ class LoginForm extends PureComponent {
             <span className="form-error">Email Or Password not matched</span>
           )}
 
+          <img src="https://cdn.jsdelivr.net/gh/harinim3042/react-ui-7-9-2022@stash-2022-07-09_12-53-34/Login/Components/Attendance.gif" width="250px" height ="250px"/>
+
           <div className={`form-group ${this.errorClass(chkEmail)}`}>
-            <label htmlFor="email" className="mt-8 pb-1"> Email: </label>
+            <label htmlFor="email" className=" pb-1"> Email: </label>
             <input
               type="email"
               ref="email"

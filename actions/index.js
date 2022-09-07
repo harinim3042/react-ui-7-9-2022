@@ -4,6 +4,7 @@ import {
   PRODUCT_LIST,
   SHOW_USER,
   ERROR,
+  LEAVE_FORM,
   ADD_ITEM,
   REMOVE_ITEM
 } from "./constant";
@@ -18,6 +19,14 @@ export const loginUser = user => {
 export const signOut = () => {
   return {
     type: LOGOUT,
+    user: [],
+    payload: []
+  };
+};
+
+export const leaveForm = () => {
+  return {
+    type: LEAVE_FORM,
     user: [],
     payload: []
   };

@@ -7,4 +7,5 @@ export const ERROR   = "ERROR"
 export const LOADING = "LOADING";
 export const ADD_ITEM = "ADD_ITEM";
 export const CANCEL = "CANCEL";
-export const REMOVE_ITEM = "REMOVE_ITEM"
+export const REMOVE_ITEM = "REMOVE_ITEM";
+export const LEAVE_FORM = "LEAVE_FORM";

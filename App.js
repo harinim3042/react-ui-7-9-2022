@@ -3,10 +3,12 @@ import { connect } from 'react-redux';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import LoginForm from './Login/Components';
 import Dashboard from './Dashboard';
+import LeaveApplication from './LeaveApplication';
 import {
   getProducts,
   getUser,
   getLogout,
+  getLeaveForm,
   removeProductItem,
   addProductItem,
 } from './services';
@@ -46,7 +48,19 @@ class App extends Component {
     this.props.getLogout();
     sessionStorage.clear();
   };
-
+  leaveForm = () => {
+    this.setState({
+      user: {
+        email,
+        password,
+      },
+    });
+    var user = { email: email, password: password };
+    sessionStorage.setItem('users', JSON.stringify(user));
+    this.props.getUser();
+    this.props.getProducts();
+   
+  };
   handleDelete = (id) => {
     this.props.removeProductItem(id);
   };
@@ -80,13 +94,16 @@ class App extends Component {
                 products={this.props.product}
                 user={isLogin}
                 onSignOut={this.signOut}
+                leaveApplication={this.leaveForm}
                 handleDelete={this.handleDelete}
                 handleAddItem={this.handleAddItem}
                 {...props}
               />
             )}
           />
+          
         )}
+
       </Router>
     );
   }
@@ -97,6 +114,7 @@ const mapDispatchToProps = (dispatch) => {
     getProducts: () => dispatch(getProducts()),
     getUser: () => dispatch(getUser()),
     getLogout: () => dispatch(getLogout()),
+    getLeaveForm: () =>dispatch(getLeaveForm()),
     removeProductItem: (id) => dispatch(removeProductItem(id)),
     addProductItem: (data) => dispatch(addProductItem(data)),
   };

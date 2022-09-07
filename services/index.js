@@ -1,4 +1,4 @@
-import { loginUser, productList, removeProduct, addProduct, signOut } from "../actions";
+import { loginUser,leaveForm, productList, removeProduct, addProduct, signOut } from "../actions";
 
 let user = [{ email: "harini@123.com", password: "harini123" }];
 
@@ -54,6 +54,10 @@ export const getProducts = () => dispatch => {
 export const getLogout = () => dispatch => {
   return dispatch(signOut());
 };
+export const getLeaveForm = () => dispatch => {
+  return dispatch(leaveForm());
+};
+
 
 export const removeProductItem = id => dispatch => {
   let new_items = products.filter((item, index) =>{ 
