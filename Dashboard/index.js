@@ -29,6 +29,79 @@ const Welcome = ({
           </p>
         </div>
       </div>
+
+      <div></div>
+      <div className="pb-13 pt-12 form-center ">
+        <div className="container-bg py-5 pe-5 ps-5">
+          <form>
+            <label htmlFor="EMPLOYEE_NAME" className=" pb-1">
+              {' '}
+              EMPLOYEE NAME:{' '}
+            </label>
+            <input
+              type="text"
+              name="EMPLOYEE_NAME"
+              onChange={this.handleChange}
+              className="form-control "
+              required
+            />
+            <label htmlFor="EMPLOYEE_NUMBER" className=" pb-1">
+              {' '}
+              EMPLOYEE NUMBER:{' '}
+            </label>
+            <input
+              type="number"
+              name="EMPLOYEE_NUMBER"
+              onChange={this.handleChange}
+              className="form-control "
+              required
+            />
+            <label htmlFor="LEAVE_DATE" className=" form-center pb-1 pt-5">
+              {' '}
+              LEAVEDATE{' '}
+            </label>
+            <br />
+            <label htmlFor="LEAVE_DATE_FROM" className=" pb-1">
+              {' '}
+              FROM DATE:{' '}
+            </label>
+            <input
+              type="text"
+              name="LEAVE_DATE_FROM"
+              onChange={this.handleChange}
+              className="form-control "
+              required
+            />
+            <label htmlFor="LEAVE_DATE_TO" className=" pb-1">
+              {' '}
+              TO DATE:{' '}
+            </label>
+            <input
+              type="text"
+              name="LEAVE_DATE_TO"
+              onChange={this.handleChange}
+              className="form-control "
+              required
+            />
+            <label htmlFor="LEAVE_REASON" className=" pb-1">
+              {' '}
+              LEAVE REASON:{' '}
+            </label>
+            <textarea
+              type="text"
+              name="LEAVE_REASON"
+              onChange={this.handleChange}
+              className="form-control "
+              rows="5"
+              cols="30"
+              minlength="10"
+              maxlength="20"
+              required
+            />
+          </form>
+        </div>
+      </div>
+
       <div className="row">
         <div className="col-12">
           <Product
