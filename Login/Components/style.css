@@ -2,14 +2,11 @@
 .has-error .error-fields,
 .has-error .form-error
 {color: red; font-size: 10pt; display: block}
-#body-login-bg{
+.body-login-bg{
   background: #667db6;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, rgb(102, 125, 182,0.5), rgb(0, 130, 200,0.5), rgb(0, 130, 200,0.5), rgb(102, 125, 182,0.5));  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, rgb(102, 125, 182,0.75), rgb(0, 130, 200,0.6), rgb(0, 130, 200,0.75), rgb(102, 125, 182,0.75)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-
-width:97%;
-margin-top: 65px;
 }
 
 
@@ -19,23 +16,19 @@ margin-top: 65px;
         
       }
 
-.page_bg{
-  background: #7474BF;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #348AC7, #7474BF);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, rgb(52, 138, 199,0.89), rgb(116, 116, 191,0.7)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+
 
 .container-bg{
     background: #C9D6FF; 
 background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  
 background: linear-gradient(to right, #E2E2E2, #C9D6FF); 
 border: #C9D6FF 2px;
-border-radius: 120px;
+/* border-radius: 120px; */
 box-shadow: 3px;
-text-align: center;
-width: 25%;
+text-align: left;
+/* width: 25%;
 padding: 3%;
-margin-top: 20px;
+margin-top: 20px; */
 display: flex;
 }
 
