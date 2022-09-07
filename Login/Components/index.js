@@ -64,9 +64,8 @@ class LoginForm extends PureComponent {
           className={`${this.errorClass(formValid)}`}
         >
           {!this.state.formValid && (
-            <span className="form-error">email Or Password not matched</span>
+            <span className="form-error">Email Or Password not matched</span>
           )}
-
 
           <div className={`form-group ${this.errorClass(chkEmail)}`}>
             <label htmlFor="email" className="mt-8 pb-1"> Email: </label>
