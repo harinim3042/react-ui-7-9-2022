@@ -22,9 +22,10 @@
 background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  
 background: linear-gradient(to right, #E2E2E2, #C9D6FF); 
 border: #C9D6FF 2px;
-border-radius: 5%;
+border-radius: 1.5em;
 box-shadow: 3px;
 text-align: left;
+width: 7e0m;
 
 display: flex;
 }
@@ -33,4 +34,7 @@ display: flex;
     width: 200px;
      height : 200px;
      text-align: center;
+ }
+ .border-radius-hr-table{
+  border-radius: 1.5em;
  }
