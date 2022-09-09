@@ -36,29 +36,42 @@ const Welcome = ({
           <form>
             <label htmlFor="EMPLOYEE_NAME" className=" pb-1">
               {' '}
-              EMPLOYEE NAME:{' '}
-            </label>
-            <input
+              EMPLOYEE NAME:{' '} <input
               type="text"
               name="EMPLOYEE_NAME"
               onChange={this.handleChange}
-              className="form-control "
+              className=" form-control "
               required
-            />
-            <label htmlFor="EMPLOYEE_NUMBER" className=" pb-1">
+            />{' '}
+            </label>
+ 
+            <label htmlFor="EMPLOYEE_NUMBER" className="me-2 pb-1">
               {' '}
               EMPLOYEE NUMBER:{' '}
-            </label>
-            <input
-              type="number"
+              <input
+              type="text"
               name="EMPLOYEE_NUMBER"
               onChange={this.handleChange}
-              className="form-control "
+              className=" form-control "
               required
-            />
+            />{' '}
+            </label>
+            
             <label htmlFor="LEAVE_DATE" className=" form-center pb-1 pt-5">
               {' '}
-              LEAVEDATE{' '}
+             <b> LEAVE TYPE</b>{' '}
+            </label>
+            <br />
+            <hr />
+            <input type="radio" />
+            HALF DAY LEAVE
+            <hr /> <input type="radio" />
+            FULL DAY LEAVE <hr />
+            <input type="radio" />
+           CONTINOUS DAYS LEAVE<hr/> 
+            <label htmlFor="LEAVE_DATE" className=" form-center pb-1 pt-5">
+              {' '}
+              LEAVE DATE{' '}
             </label>
             <br />
             <label htmlFor="LEAVE_DATE_FROM" className=" pb-1">
@@ -66,7 +79,7 @@ const Welcome = ({
               FROM DATE:{' '}
             </label>
             <input
-              type="text"
+              type="DATE"
               name="LEAVE_DATE_FROM"
               onChange={this.handleChange}
               className="form-control "
@@ -77,7 +90,7 @@ const Welcome = ({
               TO DATE:{' '}
             </label>
             <input
-              type="text"
+              type="DATE"
               name="LEAVE_DATE_TO"
               onChange={this.handleChange}
               className="form-control "
@@ -116,4 +129,3 @@ const Welcome = ({
 };
 
 export default Welcome;
-
