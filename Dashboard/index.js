@@ -69,11 +69,11 @@ const Welcome = ({
 
             <Row className="mb-3">
               <Form.Group as={Col} controlId="Leave-type">
-                <Form.Label className="mb-3">
+                <Form.Label className="mb-2">
                   <b>LEAVE TYPE</b>
                 </Form.Label>
-                <br />
-                <Form.Select defaultValue="HALF DAY" className="px-4">
+               
+                <Form.Select defaultValue="HALF DAY" className="px-4 py-1" style={{width: '220px'}}>
                   <option>HALF DAY</option>
                   <option>FULL DAY</option>
                   <option>CONTINOUS DAY</option>
@@ -117,10 +117,10 @@ const Welcome = ({
           </Form>
         </div>
       </div>
-      <div>
-        <div className="form-center border-radius-hr-table">
-          <Table responsive="md" hover variant = 'dark' className="py-5 pe-5 ps-5">
-            <thead>
+      <div className="form-center">
+        <div className="form-center container-bg px-5 pt-5">
+          <Table responsive hover variant = 'dark' className="py-5 pe-5 ps-5 border-radius-hr-table" >
+            
               <tr>
                 <th>#</th>
                 <th>EMPLOYEE ID</th>
@@ -132,7 +132,7 @@ const Welcome = ({
                 <th>REASON</th>
                 <th>APPROVAL STATUS</th>
               </tr>
-            </thead>
+           
             <tbody>
               <tr>
                 <td>1</td>
@@ -217,7 +217,17 @@ const Welcome = ({
               </tr>
             </tbody>
           </Table>
+          <br />
+          <div className="my-13 ms-4">
+     
+          <Button variant="primary" type="submit">
+                Submit
+              </Button>
+              </div>
+       
         </div>
+       
+             
       </div>
       <div className="row">
         <div className="col-12">
