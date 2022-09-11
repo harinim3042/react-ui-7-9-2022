@@ -38,9 +38,9 @@ const Welcome = ({
 
       <div></div>
       <div className="pb-13 pt-9 form-center ">
-        <div className="container-bg py-5 pe-5 ps-5">
-          <Form>
-            <h1 className="mb-8 form-center "> LEAVE APPLICATION </h1>
+        <div className="container-bg py-4 pe-5 ps-5">
+          <Form responsive>
+            <h1 className="mb-4 form-center "> LEAVE APPLICATION </h1>
             <Row className="mb-3 form-center ">
               <Form.Group as={Col} controlId="EmpId">
                 <Form.Label>
@@ -72,8 +72,12 @@ const Welcome = ({
                 <Form.Label className="mb-2">
                   <b>LEAVE TYPE</b>
                 </Form.Label>
-               
-                <Form.Select defaultValue="HALF DAY" className="px-4 py-1" style={{width: '220px'}}>
+
+                <Form.Select
+                  defaultValue="HALF DAY"
+                  className="px-4 py-1 "
+                  style={{ width: '275px' }}
+                >
                   <option>HALF DAY</option>
                   <option>FULL DAY</option>
                   <option>CONTINOUS DAY</option>
@@ -117,22 +121,27 @@ const Welcome = ({
           </Form>
         </div>
       </div>
-      <div className="form-center">
-        <div className="form-center container-bg px-5 pt-5">
-          <Table responsive hover variant = 'dark' className="py-5 pe-5 ps-5 border-radius-hr-table" >
-            
-              <tr>
-                <th>#</th>
-                <th>EMPLOYEE ID</th>
-                <th>EMPLOYEE NAME</th>
-                <th>EMPLOYEE POSITION</th>
-                <th>LEAVE TYPE</th>
-                <th>FROM DATE</th>
-                <th>TO DATE</th>
-                <th>REASON</th>
-                <th>APPROVAL STATUS</th>
-              </tr>
-           
+      <div >
+        <h1  className="form-center" >EMPLOYEE LEAVE APPROVAL</h1>
+        <div className="px-5 pt-2">
+          <Table
+            responsive
+            hover
+            variant="dark"
+            className="py-5 pe-5 ps-5 border-radius-hr-table"
+          >
+            <tr>
+              <th>#</th>
+              <th>EMPLOYEE ID</th>
+              <th>EMPLOYEE NAME</th>
+              <th>EMPLOYEE POSITION</th>
+              <th>LEAVE TYPE</th>
+              <th>FROM DATE</th>
+              <th>TO DATE</th>
+              <th>REASON</th>
+              <th>APPROVAL STATUS</th>
+            </tr>
+
             <tbody>
               <tr>
                 <td>1</td>
@@ -217,18 +226,14 @@ const Welcome = ({
               </tr>
             </tbody>
           </Table>
-          <br />
-          <div className="my-13 ms-4">
-     
-          <Button variant="primary" type="submit">
-                Submit
-              </Button>
-              </div>
-       
         </div>
-       
-             
+      
       </div>
+      <div  className="py-1 pe-5 ps-5 form-center">
+          <Button variant="dark" type="submit">
+            Submit
+          </Button>
+        </div>
       <div className="row">
         <div className="col-12">
           <Product
