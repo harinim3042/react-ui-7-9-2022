@@ -6,10 +6,7 @@ import Col from 'react-bootstrap/Col';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Row from 'react-bootstrap/Row';
 import Table from 'react-bootstrap/Table';
-import Container from 'react-bootstrap/Container';
-import DoughnutChart from './Doughnut.js';
-import LineChart from './Linechart.js';
-import BarChart from './BarChart.js';
+import EMP from './empData.json'
 
 const Welcome = ({
   products,
@@ -126,13 +123,14 @@ const Welcome = ({
         </div>
       </div>
       <div>
+       
         <h1 className="form-center">EMPLOYEE LEAVE APPROVAL</h1>
         <div className="px-5 pt-2">
           <Table
             responsive
             hover
             variant="dark"
-            className="py-5 pe-5 ps-5 border-radius-hr-table"
+            className="py-5 pe-5 ps-5  border-radius-hr-table"
           >
             <tr>
               <th>#</th>
@@ -147,15 +145,17 @@ const Welcome = ({
             </tr>
 
             <tbody>
-              <tr>
-                <td>1</td>
+            {EMP.map((item) =>(
+              <tr key={item.id}>
+                <td>{item.id}</td>
+                <td>{item.id}</td>
+                <td>{item.first_name} {item.last_name}</td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td></td>
-                <td></td>
+             
                 <td>
                   {' '}
                   <Form.Check
@@ -173,61 +173,8 @@ const Welcome = ({
                     id="not_approved"
                   />
                 </td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>
-                  {' '}
-                  <Form.Check
-                    inline
-                    label="APPROVED"
-                    name="group1"
-                    type="radio"
-                    id="approved"
-                  />
-                  <Form.Check
-                    inline
-                    label="NOT APPROVED"
-                    name="group1"
-                    type="radio"
-                    id="not_approved"
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>
-                  {' '}
-                  <Form.Check
-                    inline
-                    label="APPROVED"
-                    name="group1"
-                    type="radio"
-                    id="approved"
-                  />
-                  <Form.Check
-                    inline
-                    label="NOT APPROVED"
-                    name="group1"
-                    type="radio"
-                    id="not_approved"
-                  />
-                </td>
-              </tr>
+              </tr>))}
+            
             </tbody>
           </Table>
         </div>

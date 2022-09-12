@@ -1,40 +1,54 @@
-.error-fields, .form-error{ display: none}
+.error-fields,
+.form-error {
+  display: none;
+}
 .has-error .error-fields,
-.has-error .form-error
-{color: red; font-size: 10pt; display: block}
-.body-login-bg{
-  background: #667db6;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, rgb(102, 125, 182,0.5), rgb(0, 130, 200,0.5), rgb(0, 130, 200,0.5), rgb(102, 125, 182,0.5));  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, rgb(102, 125, 182,0.75), rgb(0, 130, 200,0.6), rgb(0, 130, 200,0.75), rgb(102, 125, 182,0.75)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+.has-error .form-error {
+  color: red;
+  font-size: 10pt;
+  display: block;
+}
+.body-login-bg {
+  background: #667db6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    rgb(102, 125, 182, 0.5),
+    rgb(0, 130, 200, 0.5),
+    rgb(0, 130, 200, 0.5),
+    rgb(102, 125, 182, 0.5)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgb(102, 125, 182, 0.75),
+    rgb(0, 130, 200, 0.6),
+    rgb(0, 130, 200, 0.75),
+    rgb(102, 125, 182, 0.75)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-
-    .form-center {
-        display:flex;
-        justify-content: center;
-        
-      }
-
-
-.container-bg{
-    background: #C9D6FF; 
-background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  
-background: linear-gradient(to right, #E2E2E2, #C9D6FF); 
-border: #C9D6FF 2px;
-border-radius: 1.5em;
-box-shadow: 3px;
-text-align: left;
-width: 70em;
-
-display: flex;
+.form-center {
+  display: flex;
+  justify-content: center;
 }
 
- .logostyle{
-    width: 200px;
-     height : 200px;
-     text-align: center;
- }
- .border-radius-hr-table{
+.container-bg {
+  background: #c9d6ff;
+  background: -webkit-linear-gradient(to right, #e2e2e2, #c9d6ff);
+  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+  border: #c9d6ff 2px;
   border-radius: 1.5em;
- }
+  box-shadow: 3px;
+  text-align: left;
+  width: fit-content;
+
+  display: flex;
+}
+
+.logostyle {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
+.border-radius-hr-table {
+  border-radius: 1.5em;
+}
