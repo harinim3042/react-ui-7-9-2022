@@ -6,6 +6,10 @@ import Col from 'react-bootstrap/Col';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Row from 'react-bootstrap/Row';
 import Table from 'react-bootstrap/Table';
+import Container from 'react-bootstrap/Container';
+import DoughnutChart from './Doughnut.js';
+import LineChart from './Linechart.js';
+import BarChart from './BarChart.js';
 
 const Welcome = ({
   products,
@@ -37,8 +41,8 @@ const Welcome = ({
       </div>
 
       <div></div>
-      <div className="pb-13 pt-9 form-center ">
-        <div className="container-bg py-4 pe-5 ps-5">
+      <div className=" container-bg pb-5 pt-8 form-center ">
+        <div className=" py-4 pe-5 ps-5">
           <Form responsive>
             <h1 className="mb-4 form-center "> LEAVE APPLICATION </h1>
             <Row className="mb-3 form-center ">
@@ -107,7 +111,7 @@ const Welcome = ({
                   <Form.Control
                     as="textarea"
                     placeholder="Specify Reason for leave applied"
-                    style={({ height: '20em' }, { width: '45em' })}
+                    style={({ height: '60em' }, { width: '60em' })}
                   />
                 </FloatingLabel>
               </Form.Group>
@@ -121,8 +125,8 @@ const Welcome = ({
           </Form>
         </div>
       </div>
-      <div >
-        <h1  className="form-center" >EMPLOYEE LEAVE APPROVAL</h1>
+      <div>
+        <h1 className="form-center">EMPLOYEE LEAVE APPROVAL</h1>
         <div className="px-5 pt-2">
           <Table
             responsive
@@ -227,13 +231,14 @@ const Welcome = ({
             </tbody>
           </Table>
         </div>
-      
       </div>
-      <div  className="py-1 pe-5 ps-5 form-center">
-          <Button variant="dark" type="submit">
-            Submit
-          </Button>
-        </div>
+      <div className="py-1 pe-5 ps-5 form-center">
+        <Button variant="dark" type="submit">
+          Submit
+        </Button>
+      </div>
+
+    
       <div className="row">
         <div className="col-12">
           <Product
